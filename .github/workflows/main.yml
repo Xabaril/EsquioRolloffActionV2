@@ -18,5 +18,5 @@ jobs:
         with:
           esquioUrl: 'https://esquiodemoui2.azurewebsites.net/'
           esquioApiKey: ${{ secrets.apikey }}
-          productNmae: 'Default'
+          productName: 'Default'
           featureName: 'MatchScore'
