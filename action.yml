@@ -1,0 +1,18 @@
+name: 'esquio-rolloff-v2'
+description: 'Xabaril Esquio Rolloff task-v2'
+author: 'Xabaril'
+branding:
+  icon: 'toggle-left'  
+  color: 'blue'
+inputs:
+  esquioUrl:             
+    description: 'Esquio URL (V2)'
+  esquioApiKey:
+    description: 'Esquio API KEy (keep it secret)'
+  productName:
+    description: 'Product name'
+  featureName:
+    description: 'Feature name'
+runs:
+  using: 'node12'
+  main: 'lib/main.js'
