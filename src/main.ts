@@ -25,6 +25,7 @@ async function rollOffFeature(esquioUrl: url.UrlWithStringQuery, esquioApiKey: s
           'x-api-key': esquioApiKey
       }
   }
+  console.log(`url to call ${esquioUrl.host} ${options.path}`);
   const req = https.request(options, (res: any) => {
       if (res.statusCode === 200) {
           console.log('Feature rolloff succesful');
