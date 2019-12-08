@@ -1,0 +1,22 @@
+name: "Test rolloff (V2) task"
+on:
+  pull_request:
+  push:
+    branches:
+      - master
+      - 'releases/*'
+
+jobs:
+  test_rolloff_v2_job:
+    runs-on: ubuntu-latest
+    name: Rolloff test
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+      - name: esquio-rolloff-v2
+        uses: ./
+        with:
+          esquioUrl: 'https://esquiodemoui2.azurewebsites.net/'
+          esquioApiKey: ${{ secrets.apikey }}
+          productNmae: 'Default'
+          featureName: 'MatchScore'
