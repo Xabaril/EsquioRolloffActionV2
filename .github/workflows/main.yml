@@ -5,7 +5,6 @@ on:
     branches:
       - master
       - 'releases/*'
-
 jobs:
   test_rolloff_v2_job:
     runs-on: ubuntu-latest
