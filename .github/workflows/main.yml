@@ -5,7 +5,6 @@ on:
     branches:
       - master
       - 'releases/*'
-
 jobs:
   test_rolloff_v2_job:
     runs-on: ubuntu-latest
@@ -18,5 +17,5 @@ jobs:
         with:
           esquioUrl: 'https://esquiodemoui2.azurewebsites.net/'
           esquioApiKey: ${{ secrets.apikey }}
-          productNmae: 'Default'
+          productName: 'Default'
           featureName: 'MatchScore'
