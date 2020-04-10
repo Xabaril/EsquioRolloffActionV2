@@ -22,7 +22,8 @@ async function rollOffFeature(esquioUrl: url.UrlWithStringQuery, esquioApiKey: s
       method: 'PUT',
       headers: {
           'Content-Type': 'application/json',
-          'x-api-key': esquioApiKey
+          'x-api-key': esquioApiKey,
+          'x-api-version': '2.0'
       }
   }
   console.log(`url to call ${esquioUrl.host} ${options.path}`);
